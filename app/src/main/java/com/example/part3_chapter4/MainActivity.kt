@@ -9,6 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.part3_chapter4.databinding.ActivityMainBinding
 import com.example.part3_chapter4.mvc.MvcActivity
 import com.example.part3_chapter4.mvp.MvpActivity
+import com.example.part3_chapter4.mvvm.MvvmActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -37,7 +38,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun openMVVM() {
-
+        startActivity(Intent(this, MvvmActivity::class.java))
     }
 
     fun openMVI() {
